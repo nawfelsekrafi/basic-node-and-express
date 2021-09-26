@@ -18,9 +18,9 @@ app.get('/now', function(req, res, next){
   let t = new Date();
   req.time = t.toString();
   next();
-}, function(req, res){
-  res.send({time: req.time});
-})
+}, (req, res)=> setTimeout(function(){
+  res.send({time: req.time})},1000)
+);
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
