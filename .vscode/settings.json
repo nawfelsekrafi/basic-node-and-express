@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/16c84a74-8bd6-430e-970a-188418701f95/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/FCC-EXPRESS",
+    "appService.deploySubpath": "."
+}
